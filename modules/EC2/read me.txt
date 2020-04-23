@@ -1,6 +1,8 @@
 Hi 
+steps 
+create  a Ubuntu instance 18.04 
 
-Take a Ubuntu instance 18.04 
+prerequisites
 
 in which install aws cli version 2.0, ruby and code deploy agent 
 
