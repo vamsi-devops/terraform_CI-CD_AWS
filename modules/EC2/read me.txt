@@ -27,6 +27,8 @@ sudo service codedeploy-agent start
 
 ==============================================================================================================================
 
+and give tag to the instance as 
 
+name=agent  value=one 
 
 
