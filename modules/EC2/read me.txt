@@ -7,16 +7,19 @@ in which install aws cli version 2.0, ruby and code deploy agent
 commands 
 =============================================================================================================================
 sudo -i 
-apt-get install ruby -y 
+sudo add-apt-repository universe
+sudo apt-get install gdebi-core -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
-
-sudo apt-get update -y 
+aws --version
+apt-get install ruby -y
+sudo apt-get update -y
+sudo apt-get install awscli -y
 cd /home/ubuntu
-sudo aws s3 cp s3://aws-codedeploy-us-east-1/latest/install . --region us-east-1
-sudo chmod +x ./install
-sudo ./install auto
+aws s3 cp s3://aws-codedeploy-us-east-2/latest/install . --region us-east-2
+chmod +x ./install
+./install auto
 sudo service codedeploy-agent status
 sudo service codedeploy-agent start
 
