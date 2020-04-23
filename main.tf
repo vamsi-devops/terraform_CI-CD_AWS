@@ -23,6 +23,8 @@ module "code_pipeline_module" {
 	github_owner_name = var.github_owner_name
 	github_repo_name = var.github_repo_name
     code_build_name = var.code_build_name
+    deploy_app_name = var.deploy_app_name
+    deploy_group_name = var.deploy_group_name
 
 }
 
